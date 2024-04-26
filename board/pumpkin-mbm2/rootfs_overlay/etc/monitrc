@@ -3,6 +3,7 @@ SET INIT
 
 # Run Monit as a background daemon, waking every 60 seconds to perform its process monitoring
 SET DAEMON 60
+    START DELAY 10 # for ADCS bootloader
 
 # Set the PID file the daemon should use so that any user can run `monit status`
 SET PIDFILE /var/run/monit.pid
