@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Create directory
+if [ ! -d "/root/.ssh" ]; then
+  mkdir /root/.ssh
+fi
+
+# Copy over id for rpi
+if [ ! -f /root/.ssh/id_dropbear ]; then
+    cp /etc/dora/id_dropbear /root/.ssh/
+fi
+
+# Copy over known_hosts for rpi
+if [ ! -f /root/.ssh/known_hosts ]; then
+    cp /etc/dora/known_hosts /root/.ssh/
+fi

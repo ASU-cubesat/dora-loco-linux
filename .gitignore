@@ -49,4 +49,4 @@ m4/lt~obsolete.m4
 Makefile
 
 # Ignore all executables - they are too big
-board/pumpkin-mbm2/rootfs_overlay/usr/bin/dora/*
+board/pumpkin-mbm2fs_overlay/usr/bin/dora/*

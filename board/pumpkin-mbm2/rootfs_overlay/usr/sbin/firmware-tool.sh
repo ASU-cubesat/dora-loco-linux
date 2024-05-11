@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # If -b is supplied, backup the current executables (./firmware-upgrade.sh -b)
 # If -r is supplied, restart all FSW using monit (./firmware-upgrade.sh -r)
